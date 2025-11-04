@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShadowByte - OnePiece</title>
+    <!-- 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 5 Java -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <link rel="icon" type="favicon" href="img/Logo.jpg">
+    
+   <style>
+      /* Navbar */
+      .navbar {
+        background: linear-gradient(135deg, #000, #1a1a1a, #2c2c2c);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        letter-spacing: 1px;
+        transition: 0.3s ease;
+      }
+
+      .navbar-brand:hover {
+        color: #00b4d8 !important;
+        transform: scale(1.05);
+      }
+
+      .nav-link {
+        position: relative;
+        color: #fff !important;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: red;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+      }
+
+      .nav-link:hover::after {
+        width: 70%;
+      }
+
+      .nav-link:hover {
+        color: red !important;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #03045e, #023e8a, #0077b6, #0096c7);
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 0 0 60px 60px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        animation: fadeInDown 1s ease-in-out;
+      }
+
+
+      @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      /* Feature Cards */
+      .card {
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        border-radius: 20px 20px 0 0;
+      }
+
+      /* Footer */
+      footer {
+        background: black;
+        color: #ccc;
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+    </style>
+  </head>
+
+     <body style="
+    background: url('img/bgop.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;" 
+    class="text-white">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top elegant-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" onclick="window.location.href='index.html'">
+          <img src="img/Logo.jpg" alt="Logo" width="35" height="35" class="me-2 rounded-circle border border-light">
+          ShadowByte
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item mx-2">
+            <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+     <!-- Hero Section -->
+    <section class="hero">
+      <h1 class="text-light">One <span class="text-info">Piece</span></h1>
+    </section>
+    
+    <br>
+
+         <!-- Carousel -->    
+<div class="d-flex justify-content-center my-4">
+  <div id="orvCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 900px; margin: 0 auto;">        <div class="carousel-indicators">
+
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Kim Dokja"></button>
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="1" aria-label="Yoo Joonghyuk"></button>
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="2" aria-label="Yoo Joonghyuk"></button>
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="3" aria-label="Yoo Joonghyuk"></button>
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="4" aria-label="Yoo Joonghyuk"></button>
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="5" aria-label="Yoo Joonghyuk"></button>
+        </div>
+
+ 
+
+    <!-- Carousel Images -->
+    <div class="carousel-inner rounded shadow-lg">
+      <div class="carousel-item active">
+        <img src="https://i.pinimg.com/1200x/9e/ef/be/9eefbea97ce669db3c4366f86e715236.jpg" class="d-block w-100" alt="Yoo Joonghyuk">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Monkey D. Luffy</h5>
+          <p>Sun God Nika</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/1200x/fd/98/4b/fd984bde4c53e24a8e72f49cdf8833d9.jpg" class="d-block w-100" alt="Han Sooyoung">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Roronoa Zoro</h5>
+          <p>The King of Hell</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/1200x/a2/d3/f2/a2d3f2488b1e24d6775f66a43f0ba16f.jpg" class="d-block w-100" alt="Kim Dokja">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Vinsmoke Sanji</h5>
+          <p>Mr. Prince</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/1200x/a4/01/6d/a4016d5ced83dd68605cb6a974a106bb.jpg" class="d-block w-100" alt="Lee Hyunsung">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Figarland Shanks</h5>
+          <p>Strongest Emperor of the Sea</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/736x/fb/44/05/fb440524f0877f02d09a90d85e3f9f98.jpg" class="d-block w-100" alt="Lee Jihye">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Gol D. Roger</h5>
+          <p>The King of Pirates</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/1200x/19/6c/db/196cdbaba763c5778d9ef2896a36eed9.jpg" class="d-block w-100" alt="Shin Yoosung">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Portgas D. Ace</h5>
+          <p>Fire Fist Ace</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#orvCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#orvCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</div>
+
+
+      <!-- Main: responsive grid -->
+      <main>
+        <section class="row g-4">
+          <!-- items -->
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/4f/0f/9d/4f0f9dde81aeb671f8d3da66b0ae2779.jpg" class="card-img-top" alt="Luffy">
+              <div class="card-body">
+                <h5 class="card-title text-danger">Monkey D. Luffy</h5>
+                <p class="card-text text-danger">Age: 19</p>
+                <p class="card-text text-danger">Title: Sun God Nika</p>
+                <p class="card-text text-danger">Bounty: 3,000,000,000 berries</p>
+                <p class="card-text text-danger">“He doesn’t want to rule the seas — he just wants the freedom to chase every dream the horizon hides.”</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/1200x/67/e6/57/67e6575ddd6ab921498d5f2a272009c9.jpg" class="card-img-top" alt="Development">
+              <div class="card-body">
+                <h5 class="card-title text-success">Roronoa Zoo</h5>
+                <p class="card-text text-success">Age: 21</p>
+                <p class="card-text text-success">Title: Pirate Hunter / King of Hell</p>
+                <p class="card-text text-success">Bounty: 1,111,000,000 berries</p>
+                <p class="card-text text-success">“His sword cuts not just through steel, but through doubt — for a man who never breaks cannot be defeated.”</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/1200x/2a/68/53/2a685313a95496fa74976a75ee91f500.jpg" class="card-img-top" alt="Development">
+              <div class="card-body">
+                <h5 class="card-title text-warning">Vinsmoke Sanji</h5>
+                <h5 class="card-title text-warning">Roronoa Zoo</h5>
+                <p class="card-text text-warning">Age: 21</p>
+                <p class="card-text text-warning">Title: Black Leg / Mr. Prince</p>
+                <p class="card-text text-warning">Bounty: 1,032,000,000 berries</p>
+                <p class="card-text text-warning">“He fights with fire in his legs and love in his heart — a gentleman in battle, a storm in motion.”</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/a2/16/e9/a216e9e617879e9c7217b41fc08b6922.jpg" class="card-img-top" alt="Development">
+              <div class="card-body">
+                <h5 class="card-title text-danger">Figerland Shanks</h5>
+                <p class="card-text text-danger">Age: 39</p>
+                <p class="card-text text-danger">Title: Emperor of the Sea / Captain of the Red-Haired Pirates</p>
+                <p class="card-text text-danger">Bounty: 4,048,900,000 berries</p>
+                <p class="card-text text-danger">“He doesn’t need to prove his strength — his very presence reminds the world what true freedom looks like.”</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/1200x/f5/15/ec/f515ecbe54b3eeaac74cc53e313ba62b.jpg" class="card-img-top" alt="Development">
+              <div class="card-body">
+                <h5 class="card-title text-danger">Gol D. Roger</h5>
+                <p class="card-text text-danger">Age: 53 (dead)</p>
+                <p class="card-text text-danger">Title: The Pirate King</p>
+                <p class="card-text text-danger">Bounty: 550,000,000 berries</p>
+                <p class="card-text text-danger">“He reached the end of the world not to claim it, but to show others that the journey itself was the greatest treasure.”</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/16/28/1a/16281a97a506e59863bca81ff5c95a0f.jpg" class="card-img-top" alt="Development">
+              <div class="card-body">
+                <h5 class="card-title text-danger">Portgas D. Ace</h5>
+                <p class="card-text text-danger">Age: 20 (dead)</p>
+                <p class="card-text text-danger">Title: 2nd Division Commander of the Whitebeard Pirates</p>
+                <p class="card-text text-danger">Bounty: 4,048,900,000 berries</p>
+                <p class="card-text text-danger">“Born of fire, bound by love — he burned brightest not for glory, but to protect the bonds that made him human.”</p>
+              </div>
+            </div>
+          </div>
+
+      <!-- Footer -->
+      <footer class="text-center text-mut ed p-3 mt-4">
+        © 2025 Institut Barres i Ones - <strong>ShadowByte</strong>
+      </footer>
+    </div>
+  </body>
+</html>
