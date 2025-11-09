@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShadowByte - Kim Dokja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="../img/Logo.png">
+    
+  <style>
+      /* Navbar */
+      .navbar {
+        background: linear-gradient(135deg, #000, #1a1a1a, #2c2c2c);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        letter-spacing: 1px;
+        transition: 0.3s ease;
+      }
+
+      .navbar-brand:hover {
+        color: rgb(121, 4, 4) !important;
+        transform: scale(1.05);
+      }
+
+      .nav-link {
+        position: relative;
+        color: #fff !important;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color:rgb(121, 4, 4);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+      }
+
+      .nav-link:hover::after {
+        width: 70%;
+      }
+
+      .nav-link:hover {
+        color: rgb(121, 4, 4) !important;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #490000, #880101, #860101, #db0101);
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 0 0 60px 60px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        animation: fadeInDown 1s ease-in-out;
+      }
+      .hero h5 {
+        font-size: 1.5rem;
+        font-weight: 60;
+        animation: fadeInDown 1s ease-in-out;
+      }
+
+
+      @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      /* Feature Cards */
+      .card {
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        border-radius: 20px 20px 0 0;
+      }
+
+      /* Footer */
+      footer {
+        background: black;
+        color: #ccc;
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      footer a {
+        color: #00b4d8;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body style="
+    background: url('../img/bgkd.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;" 
+    class="text-white">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+       <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="index.html">
+          <img src="../img/Logo.png" alt="Logo" width="35" height="35" class="me-2 rounded-circle border border-light">
+          ShadowByte
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1><span class="text-light">Kim Dokja</span></h1>
+      <h5><strong class="text-dark">The Demon King of Salvation</strong></h5>
+    </section>
+
+    <br>
+
+          <!-- Carousel -->
+           <div id="orvCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 900px; margin: 0 auto;">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Kim Dokja"></button>
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="1" aria-label="Kim Dokja"></button>
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="2" aria-label="Kim Dokja"></button>
+          <button type="button" data-bs-target="#orvCarousel" data-bs-slide-to="3" aria-label="Kim Dokja"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/k.png" class="d-block w-100" alt="Kim Dokja">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>Kim Dokja</h5>
+              <p>The King of the Kingless World</p>
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <img src="../img/ki.png" class="d-block w-100" alt="Kim Dokja">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>Kim Dokja</h5>
+              <p>The Reader</p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="../img/kim.png" class="d-block w-100" alt="Kim Dokja">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>Kim Dokja</h5>
+              <p>The Oldest Dream</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../img/kim dok.png" class="d-block w-100" alt="HKim Dokja">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>Kim Dokja</h5>
+              <p>The One Who Opposes the Miracle</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#orvCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#orvCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+        <br>
+
+     <!-- Main: responsive grid -->
+        <main>
+        <section>
+          <div class="container bg-dark bg-opacity-75 p-5 rounded-4 shadow-lg">
+
+         <div class="col-md-12">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/1200x/15/e1/89/15e1895af7b79aa0eb77a38b310eb316.jpg" class="card-img-top" alt="Development">
+              <div class="card-body">
+                <h5 class="card-title text-danger">Kim Dokja | The Reader</h5>
+                <p class="card-text text-danger">“She laughed at gods, rewrote destinies, and turned tragedy into ink. Her pen was rebellion, her story a weapon — for even lies can save a world when told by the right hand.”</p>
+              </div>
+            </div>
+          </div>
+<br>
+         <div class="col-md-12">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title text-dark">📖 Kim Dokja — The Reader Who Became the Story</h5>
+                <p class="card-text text-dark">Kim Dokja was an ordinary office worker and the sole reader of a long, obscure web novel
+                   called Three Ways to Survive in a Ruined World. When that very story becomes reality, he alone knows the events to come.
+                    Using his knowledge, wit, and self-sacrifice, he guides others through the apocalypse, evolving from a silent observer 
+                    into the heart of the tale itself. Beneath his calm intelligence lies deep loneliness — but also an unshakable will to 
+                    save others, even at the cost of his own place in the story.</p>
+              </div>
+            </div>
+          </div>
+        
+       </div>
+    </div>
+  </section>
+</main>
+
+      <!-- Footer -->
+      <footer class="text-center text-mut ed p-3 mt-4">
+        © 2025 Institut Barres i Ones  - <strong>ShadowByte</strong>
+      </footer>
+    </div>
+  </body>
+</html>
